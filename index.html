@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--SEO-->
+        <title>M.A.B Portfolio</title>
+        <!--Styling-->
+        <link rel="stylesheet" href="static/style.css">
+        <!--Import Roboto font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <!--Import iconify icons (navbar)-->
+        <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    </head>
+    <body class="col">
+        <!--"Logo" and Navbar-->
+        <header class="col">
+            <h1>M.A.B</h1>
+            <nav class="row navbar">
+                <a class="col nav-item" href="#courses">
+                    <!-- iconify class needed for icon to appear-->
+                    <span class="nav-icon iconify" role="img" alt="" data-icon="dashicons:welcome-learn-more" style="color: #eca400;" data-width="70"></span>
+                    <span class="icon-text">Courses</span>
+                </a>
+                <a class="col nav-item" href="#projects">
+                    <span class="nav-icon iconify" role="img" alt="" data-icon="ion:build-sharp" style="color: #eca400;" data-width="70"></span>
+                    <span class="icon-text">Projects</span>
+                </a>           
+            </nav>
+            <!--Break-->
+            <hr>
+        </header>
+        
+        <!--Main content of page-->
+        <main class="col">
+            <!--Courses section-->
+            <section class="section">
+                <!--Title at top of section-->
+                <h2 id="courses" class="section-title">Courses</h2>
+                <!--Scrollable info card container-->
+                <div class="scrollable">
+
+                    <!--CS50x info card-->
+                    <section class="col card">
+                        <div class="card-top">
+                            <!--Card title-->
+                            <h3 class="card-title">CS50x</h3>
+                            <!--Tech icon row(s)-->
+                            <div class="row tech-row">
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/c_logo.svg" alt="Technology used: C"/>
+                                    <span class="tooltip-text">C</span>
+                                </div>
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/python_logo.svg" alt="Technology used: Python"/>
+                                    <span class="tooltip-text">Python</span>
+                                </div>
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/sqlite_logo.svg" alt="Technology used: SQLite"/>
+                                    <span class="tooltip-text">SQLite</span>
+                                </div>
+                            </div>
+                            <div class="row tech-row">
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/html_logo.svg" alt="Technology used: HTML"/>
+                                    <span class="tooltip-text">HTML</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/css_logo.svg" alt="Technology used: CSS"/>
+                                    <span class="tooltip-text">CSS</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/javascript_logo.svg" alt="Technology used: JavaScript"/>
+                                    <span class="tooltip-text">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Overview-->
+                        <div class="card-body">
+                            <p class="tag-line">
+                                <i>Intro to Computer Science and Programming</i>
+                            </p>
+                            <p>
+                                Learned algorithmic thinking and problem solving.
+                            </p><br>
+                            <h4>Topics</h4>
+                            <ul>
+                                <li>Abstraction</li>
+                                <li>AlgorithmsResponsive design</li>
+                                <li>Data structures and more</li>
+                            </ul><br>
+                            <a class="text-link" href="https://github.com/naraitai/cs50x">See tasks on Github</a>
+                        </div>
+                        <!--Status stamp-->
+                        <div class="row card-bottom">
+                            <img class="stamp" src="assets/stamps_completed.svg" alt="Status: Completed"/>
+                        </div>
+                    </section>
+
+                    <!--Free code camp info (responsive web design)-->
+                    <section class="col card">
+                        <div class="card-top">
+                            <!--Card title-->
+                            <h3 class="card-title">Free Code Camp: Responsive Web Design</h3>
+                            <!--Tech icon row(s)-->
+                            <div class="row tech-row">
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/html_logo.svg" alt="Technology used: HTML"/>
+                                    <span class="tooltip-text">HTML</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/css_logo.svg" alt="Technology used:CSS"/>
+                                    <span class="tooltip-text">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Overview-->
+                        <div class="card-body">
+                            <p class="tag-line">
+                                <i>Foundation of responsive web development</i>
+                            </p>
+                            <p>
+                                Learned the basic web technologies HTML and CSS.
+                            </p><br>
+                            <h4>Topics</h4>
+                            <ul>
+                                <li>Accessibility</li>
+                                <li>Responsive design</li>
+                                <li>CSS Flexbox and grid</li>
+                            </ul>
+                        </div>
+                        <!--Status stamp-->
+                        <div class="row card-bottom">
+                            <img class="stamp" src="assets/stamps_completed.svg" alt="Status: Completed"/>
+                        </div>
+                    </section>
+
+                    <!--Freecode Camp info (JavaScript)-->
+                    <section class="col card">
+                        <div class="card-top">
+                            <!--Card title-->
+                            <h3 class="card-title">Freecode Camp: JavaScript Algorithms</h3>
+                            <!--Tech icon row(s)-->
+                            <div class="row tech-row">
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/javascript_logo.svg" alt="Technology used: JavaScript"/>
+                                    <span class="tooltip-text">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Overview-->
+                        <div class="card-body">
+                            <p class="tag-line">
+                                <i>JavaScript fundamentals</i>
+                            </p>
+                            <p>
+                                Learning to implement simple algorithms using JavaScript.
+                            </p><br>
+                            <h4>Topics</h4>
+                            <ul>
+                                <li>Regular expressions</li>
+                                <li>Data structures</li>
+                                <li>Algorithm scripting</li>
+                                <li>OOP and FP</li>
+                            </ul>
+                        </div>
+                        <!--Status stamp-->
+                        <div class="row card-bottom">
+                            <img class="stamp" src="assets/stamps_ongoing.svg" alt="Status: Ongoing"/>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!--Projects section-->
+            <section class="section">
+                <!--Title at top of section-->
+                <h2 id="projects" class="section-title">Projects</h2>
+                <!--Scrollable info card container-->
+                <div class="scrollable">
+                    
+                    <!--Ankimate info card-->
+                    <section class="col card">
+                        <div class="card-top">
+                            <h3 class="card-title">Ankimate</h3>
+                            <!--Tech logo row(s)-->
+                            <div class="row tech-row">
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/python_logo.svg" alt="Technology used: Python"/>
+                                    <span class="tooltip-text">Python</span>
+                                </div>
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/flask_logo.svg" alt="Technology used: Flask"/>
+                                    <span class="tooltip-text">Flask</span>
+                                </div>
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/sqlite_logo.svg" alt="Technology used: SQLite"/>
+                                    <span class="tooltip-text">SQLite</span>
+                                </div>
+                                <div class="tooltip-top">
+                                    <img class="tech-icon" src="assets/jinja2_logo.svg" alt="Technology used: Jinja2"/>
+                                    <span class="tooltip-text">Jinja2</span>
+                                </div>
+                            </div>
+                            <div class="row tech-row">
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/html_logo.svg" alt="Technology used: HTML"/>
+                                    <span class="tooltip-text">HTML</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/css_logo.svg" alt="Technology used: CSS"/>
+                                    <span class="tooltip-text">CSS</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/sass_logo.svg" alt="Technology used: SASS"/>
+                                    <span class="tooltip-text">SASS</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/javascript_logo.svg" alt="Technology used: JavaScript"/>
+                                    <span class="tooltip-text">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Overview-->
+                        <div class="card-body">
+                            <p class="tag-line">
+                                <i>Flask web application</i>
+                            </p>
+                            <p>
+                                Students of Japanese and Mandarin can upload, review
+                                and download vocabulary lists to quickly create vocabulary 
+                                flash cards.
+                            </p><br>
+                            <a class="text-link" href="https://ankimate.herokuapp.com/">See it live</a><br>
+                            <a class="text-link" href="https://github.com/naraitai/ankimate">View source code</a>
+                        </div>
+                        <!--Status stamp-->
+                        <div class="row card-bottom">
+                            <img class="stamp" src="assets/stamps_live.svg" alt="Status: Live"/>
+                        </div>
+                    </section>
+
+                    <!--Portfolio site info card-->
+                    <section class="col card">
+                        <div class="card-top">
+                            <h3 class="card-title">M.B.</h3>
+                            <!--Tech icon row(s)-->
+                            <div class="row tech-row">
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/html_logo.svg" alt="Technology used: HTML"/>
+                                    <span class="tooltip-text">HTML</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/css_logo.svg" alt="Technology used: CSS"/>
+                                    <span class="tooltip-text">CSS</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/javascript_logo.svg" alt="Technology used: JavaScript"/>
+                                    <span class="tooltip-text">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Overview-->
+                        <div class="card-body">
+                            <p class="tag-line">
+                                <i>Static website</i>
+                            </p>
+                            <p>
+                                Personal portfolio website with information about
+                                courses and projects, both completed and ongoing.
+                            </p><br>
+                            <a class="text-link" href="">View source code</a>
+                        </div>
+                        <!--Status stamp-->
+                        <div class="row card-bottom">
+                            <img class="stamp" src="assets/stamps_live.svg" alt="Status: Live"/>
+                        </div>
+                    </section>
+
+                    <!--WordPress Theme info card-->
+                    <section class="col card">
+                        <div class="card-top">
+                            <h3 class="card-title">WordPress Theme: In Development</h3>
+                            <!--Tech icon row(s)-->
+                            <div class="row tech-row">
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/php_logo.svg" alt="Technology used: PHP"/>
+                                    <span class="tooltip-text">PHP</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/html_logo.svg" alt="Technology used: HTML"/>
+                                    <span class="tooltip-text">HTML</span>
+                                </div>
+                                <div class="tooltip-bot">
+                                    <img class="tech-icon" src="assets/css_logo.svg" alt="Technology used: CSS"/>
+                                    <span class="tooltip-text">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Overview-->
+                        <div class="card-body">
+                            <p class="tag-line">
+                                <i>Full WordPress theme</i>
+                            </p>
+                            <p>
+                                Full WordPress theme to be uploaded to WordPress theme library. 
+                                Also, for use on personal blog.
+                            </p>
+                        </div>
+                        <!--Status stamp-->
+                        <div class="row card-bottom">
+                            <img class="stamp" src="assets/stamps_dev.svg" alt="Status: In development"/>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,370 @@
+/* CSS Custom properties */
+:root {
+    /* Color palette */
+    --ink: #1A1D27;
+    --gold: #ECA400;
+    --sky: #B9D6F2;
+
+    /* Font */
+    --df-font: "Roboto";
+    
+    /* Font sizes */
+
+    /* Mobile */
+    --fs-exlg: 2rem;
+    --fs-lg: 1.5rem;
+    --fs-med: 1.25rem;
+    --fs-stand: 1rem;
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) {
+    :root {
+        --fs-exlg: 2.5rem;
+        --fs-lg: 2.25rem;
+        --fs-med: 1.75rem;
+        --fs-stand: 1rem;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 769px) {
+    :root {
+        --fs-exlg: 3rem;
+        --fs-lg: 2.5rem;
+        --fs-med: 1.75rem;
+        --fs-stand: 1rem;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+    :root {
+        --fs-exlg: 3.5rem;
+        --fs-lg: 2.75rem;
+        --fs-med: 1.75rem;
+        --fs-stand: 1rem;
+    }
+}
+
+/* Global */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--df-font);
+}
+
+/* Structure */
+.col, .three-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-col {
+    width: calc(100% / 3);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* SECTIONS */
+
+body {
+    background-color: var(--ink);
+}
+
+header {
+    height: fit-content;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 20vh;
+    color: var(--gold);
+}
+
+.nav-item {
+    margin: 5px 10px;
+}
+
+.nav-icon {
+    /* Stops iconify icons resizing on hover */
+    border: 3px solid var(--ink);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    border: 3px solid var(--gold);
+}
+
+.icon-text {
+    margin-top: 5px;
+    font-variant: small-caps;
+    font-size: var(--fs-med);
+}
+
+hr {
+    width: 80%;
+    background-color: var(--gold);
+    border: 2px solid var(--gold);
+}
+
+/* Elements */
+h1 {
+    text-align: center;
+    font-size: var(--fs-exlg);
+    font-weight: 100;
+
+    color: var(--gold);
+}
+
+.section {
+    width: 80%;
+    height: 100vh;
+
+    margin: 2%;
+}
+
+.section-title {
+    align-self: center;
+    width: 100%;
+    height: 10%;
+
+    border-radius: 5px;
+    
+    text-align: center;
+    font-variant: small-caps;
+    font-size: var(--fs-lg);
+
+    background-color: var(--sky);
+    color: var(--ink);
+}
+
+.scrollable {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 90%;
+
+    margin-bottom: 3%;
+
+    overflow-x: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 1rem;
+    height: 20px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background-color: var(--ink);
+    border: 2px solid rgba(236,164,0,0.75);
+    border-radius: 5px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(236,164,0,0.75);
+    border-radius: 5px;
+}
+
+/* Card Element */
+.card {
+    flex: 0 0 auto;
+    width: clamp(250px, 485px, 80vw);
+    height: 82vh;
+    align-items: center;
+    
+    margin: 0px 10px;
+    border-radius: 20px;
+    padding: 10px;
+    
+    background-color: var(--sky);
+    transition-duration: 3s;
+}
+
+.card-top {
+    width: 100%;
+    height: 35%;
+}
+
+.card-title {
+    height: fit-content;
+
+    margin-bottom: 2px;
+    border-radius: 10px;
+    padding: 2px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--fs-stand);
+
+    background-color: var(--ink);
+    color: var(--gold);
+}
+
+.card-body {
+    width: 90%;
+    height: 50%;
+
+    margin: 5px 0px;
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    padding: 0px 15px;
+
+    font-size: var(--fs-stand);
+
+    overflow-x: auto;
+}
+
+.card-bottom {
+    height: 20%;
+}
+
+.tech-row {
+    height: 42.5%; 
+}
+
+.tech-icon {
+    width: 90%;
+    height: 100%;
+}
+
+.tag-line {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.stamp {
+    width: 100%;
+    height: 100%;
+}
+
+/* User interaction */
+a { 
+    text-align: center;
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.text-link {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 2px;
+
+    background-color: var(--ink);
+
+    text-decoration: underline;
+}
+
+.text-link:hover {
+    color: var(--sky);
+}
+
+.text-link:focus {
+    outline-color: var(--gold);
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+/* User Feedback */
+.tooltip-top, .tooltip-bot {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.tooltip-top .tooltip-text {
+    visibility: hidden;
+
+    position: absolute;
+    width: 120px;
+
+    z-index: 1;
+    bottom: 105%;
+    left: 50%;
+    margin-left: -60px;
+    border-radius: 6px;
+    padding: 5px 0;
+     
+    opacity: 0;
+
+    text-align: center;
+    background-color: var(--gold);
+    color: var(--ink);
+
+    transition: opacity 0.3s;
+}
+
+.tooltip-bot .tooltip-text {
+    visibility: hidden;
+
+    position: absolute;
+    width: 120px;
+    
+    z-index: 1; 
+    top: 105%;
+    left: 50%;
+    margin-left: -60px;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    opacity: 0;
+
+    text-align: center;
+    background-color: var(--gold);
+    color: var(--ink);
+
+    transition: opacity 0.3s;
+}
+
+.tooltip-top .tooltip-text::after {
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--gold) transparent transparent transparent;
+}
+
+.tooltip-bot .tooltip-text::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--gold) transparent;
+}
+
+.tooltip-top:hover .tooltip-text, .tooltip-bot:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
